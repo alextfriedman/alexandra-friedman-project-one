@@ -225,3 +225,79 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav h1 {
+  margin: 0;
+  font-family: "Playfair Display SC", serif;
+  color: #50E3C2;
+  text-transform: lowercase;
+  font-size: 34.6px;
+}
+nav ul {
+  border: 2px solid blue;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav li {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 1px;
+  color: #FAFFFE;
+}
+nav li:hover, nav li:focus, nav li:active {
+  color: #50E3C2;
+  cursor: pointer;
+}

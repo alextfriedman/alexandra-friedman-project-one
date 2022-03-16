@@ -1,0 +1,33 @@
+nav {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        margin: 0;
+        font-family: $headingFont;
+        color: $turquoise;
+        text-transform: lowercase;
+        font-size: 34.6px;
+    }
+    ul {
+        border: 2px solid blue;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    li {
+        font-family: $bodyFont;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 29px;
+        letter-spacing: 1px;
+        color: $iceBlue;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $turquoise;
+            cursor: pointer;
+        }
+    }
+}
