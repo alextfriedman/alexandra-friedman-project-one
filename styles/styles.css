@@ -263,7 +263,6 @@ a {
 }
 
 nav {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,7 +278,6 @@ nav h1 {
   font-size: 34.6px;
 }
 nav ul {
-  border: 2px solid blue;
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
