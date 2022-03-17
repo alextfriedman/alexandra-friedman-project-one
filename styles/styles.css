@@ -262,7 +262,41 @@ a {
   color: inherit;
 }
 
+.homeHeader {
+  height: 80vh;
+  background-image: url(../assets/home-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.homeHeader img {
+  width: 650px;
+  position: absolute;
+  top: 200px;
+  left: 0;
+}
+.homeHeader h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 6.7px;
+  text-transform: lowercase;
+  color: #0C5F4C;
+  position: absolute;
+  top: 250px;
+  right: 250px;
+  z-index: 10;
+}
+.homeHeader h2 span {
+  font-family: "Playfair Display SC", serif;
+  font-size: 111.2px;
+  color: #063974;
+  line-height: 110px;
+}
+
 nav {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

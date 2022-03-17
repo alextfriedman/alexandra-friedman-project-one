@@ -1,0 +1,32 @@
+.homeHeader {
+    height: 80vh;
+    background-image: url(../assets/home-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    img {
+        width: 650px;
+        position: absolute;
+        top: 200px;
+        left: 0;
+    }
+    h2 {
+        font-family: $bodyFont;
+        font-size: 62px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 6.7px;
+        text-transform: lowercase;
+        color: $green;
+        position: absolute;
+        top: 250px;
+        right: 250px;
+        z-index: 10;
+        span {
+            font-family: $headingFont;
+            font-size: 111.2px;
+            color: $darkBlue;
+            line-height: 110px;
+        }
+    }
+}
