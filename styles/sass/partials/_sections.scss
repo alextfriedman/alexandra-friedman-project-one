@@ -1,0 +1,61 @@
+.heroSection {
+    padding: 150px 0 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    .heroText {
+        border: 2px solid blue;
+        width: 63%;
+    }
+    .heroImage {
+        border: 2px solid yellowgreen;
+        width: 27%;
+        img {
+            box-shadow: -20px 20px $turquoise;
+        }
+    }
+    h3 {
+        color: $green;
+    }
+}
+
+.gallerySection {
+    background-color: $lightBlue;
+    ul {
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0;
+        li {
+            width: 30%;
+        }
+    }
+}
+
+.aboutSection {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.moreSection {
+    background-color: $lightBlue;
+    display: flex;
+}
+
+.bottomSection {
+    .background {
+        height: 50vh;
+        background-image: url(../assets/banner-image.jpg);
+        background-size: cover;
+    }
+    .freeTrip {
+        background-color: white;
+        padding: 200px 0;
+        text-align: center;
+        h3 {
+            color: $green;
+        }
+    }
+}
