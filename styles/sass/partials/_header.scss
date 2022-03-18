@@ -18,9 +18,9 @@
         letter-spacing: 6.7px;
         text-transform: lowercase;
         color: $green;
-        position: absolute;
-        top: 250px;
-        right: 250px;
+        position: relative;
+        top: 230px;
+        left: 220px;
         z-index: 10;
         span {
             font-family: $headingFont;
