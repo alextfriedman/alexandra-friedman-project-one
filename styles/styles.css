@@ -284,6 +284,9 @@ h2 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   line-height: 58px;
+  font-size: 87px;
+  letter-spacing: 9px;
+  color: white;
 }
 
 h3 {
@@ -293,6 +296,7 @@ h3 {
   line-height: 58px;
   letter-spacing: 3.8px;
   margin: 0;
+  color: #0C5F4C;
 }
 
 h4 {
@@ -349,6 +353,56 @@ p,
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 2px;
+}
+
+form {
+  border: 2px solid magenta;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+}
+form .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form input {
+  border: none;
+  border-bottom: 2px solid #50E3C2;
+  width: calc(50% - 15px);
+  padding: 20px;
+}
+form textarea {
+  border: 2px solid #50E3C2;
+  padding: 20px;
+  resize: none;
+}
+form ::-webkit-input-placeholder {
+  font-weight: 300;
+}
+form ::-moz-placeholder {
+  font-weight: 300;
+}
+form :-ms-input-placeholder {
+  font-weight: 300;
+}
+form ::-ms-input-placeholder {
+  font-weight: 300;
+}
+form ::placeholder {
+  font-weight: 300;
 }
 
 .homeHeader {
@@ -475,9 +529,14 @@ nav a:hover, nav a:focus, nav a:active {
 
 .moreSection {
   background-color: #D2F9F1;
+}
+.moreSection .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.moreSection h3 {
+  color: #063974;
 }
 
 .bottomSection .background {
@@ -489,9 +548,6 @@ nav a:hover, nav a:focus, nav a:active {
   background-color: white;
   padding: 200px 0;
   text-align: center;
-}
-.bottomSection .freeTrip h3 {
-  color: #0C5F4C;
 }
 
 footer {
@@ -510,9 +566,6 @@ footer p {
   background-repeat: no-repeat;
 }
 .contactHeader h2 {
-  font-size: 87px;
-  letter-spacing: 9px;
-  color: white;
   position: relative;
   top: 150px;
   left: 70px;
@@ -530,59 +583,12 @@ footer p {
           justify-content: space-between;
 }
 
-form {
-  border: 2px solid magenta;
+.contactForm {
   position: relative;
   top: -150px;
   width: 70%;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 50px;
   -webkit-box-shadow: 20px 20px #50E3C2;
           box-shadow: 20px 20px #50E3C2;
-}
-form .nameEmail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-form input {
-  border: none;
-  border-bottom: 2px solid #50E3C2;
-  width: calc(50% - 15px);
-  padding: 20px;
-}
-form textarea {
-  border: 2px solid #50E3C2;
-  padding: 20px;
-  resize: none;
-}
-form ::-webkit-input-placeholder {
-  font-weight: 300;
-}
-form ::-moz-placeholder {
-  font-weight: 300;
-}
-form :-ms-input-placeholder {
-  font-weight: 300;
-}
-form ::-ms-input-placeholder {
-  font-weight: 300;
-}
-form ::placeholder {
-  font-weight: 300;
 }
 
 .contactAside {

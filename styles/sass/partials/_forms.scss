@@ -1,0 +1,26 @@
+form {
+    border: 2px solid magenta;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    .nameEmail {
+        display: flex;
+        justify-content: space-between;
+    }
+    input {
+        border: none;
+        border-bottom: 2px solid $turquoise;
+        width: calc(50% - 15px);
+        padding: 20px;
+    }
+    textarea {
+        border: 2px solid $turquoise;
+        padding: 20px;
+        resize: none;
+    }
+    ::placeholder {
+        font-weight: 300;
+    }
+}
