@@ -7,6 +7,97 @@
 }
 
 // Main
-.blogMain {
-    
+.mainAside {
+    display: flex;
+    justify-content: space-between;
+    main {
+        border: 2px solid yellow;
+        width: 70%;
+        .blogPost {
+            border-right: 5px solid $turquoise;
+            img {
+                box-shadow: 20px 20px $turquoise;
+                position: relative;
+                top: -150px;
+            }
+            .byline {
+                color: $darkBlue;
+                font-style: italic;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    aside {
+        border: 2px solid magenta;
+        margin-top: 100px;
+        width: calc(35% - 290px);
+        position: absolute;
+        right: 0;
+        img {
+            height: 400px;
+            width: auto;
+        }
+        h5 {
+            margin: 20px 0;
+            font-family: $bodyFont;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: 2px;
+            color: $darkBlue;
+        }
+        p {
+            margin: 0;
+            &.missionLink {
+                color: $green;
+            }
+        }
+        li::before {
+            content: "• ";
+            color: $turquoise;
+        }
+        // ul {
+        //     list-style: disc;
+        //     padding-left: 20px;
+        // }
+    }
+}
+
+.borderLine {
+    width: 800px;
+    height: 5px;
+    background-color: $turquoise;
+}
+
+.commentSection {
+    border: 2px solid red;
+    margin: 50px 0;
+    h4 {
+        color: $black;
+        letter-spacing: 1px;
+    }
+    .reyansh,
+    .olivia {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        .commentImage {
+            border: 2px solid orange;
+            width: 15%;
+        }
+        .commentText {
+            border: 2px solid green;
+            width: 82%;
+            p.date {
+                font-weight: 700;
+                color: $darkBlue;
+            }
+        }
+    }
+    .commentForm {
+        background-color: $iceBlue;
+        height: 55vh;
+        textarea {
+            background-color: $iceBlue;
+        }
+    }
 }

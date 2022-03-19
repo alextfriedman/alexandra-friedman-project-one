@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -226,6 +227,10 @@ html {
   overflow: hidden;
 }
 
+body {
+  background-color: #FAFFFE;
+}
+
 .skip-link {
   position: absolute;
   left: -1000px;
@@ -349,7 +354,8 @@ h4 {
 }
 
 p,
-::placeholder {
+::placeholder,
+aside li {
   font-family: "Lato", sans-serif;
   color: #2c2c2c;
   font-size: 20px;
@@ -478,7 +484,6 @@ nav a:hover, nav a:focus, nav a:active {
 
 .heroSection {
   padding: 150px 0 100px;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,7 +596,6 @@ nav a:hover, nav a:focus, nav a:active {
   background-size: cover;
 }
 .bottomSection .freeTrip {
-  background-color: white;
   padding: 200px 0;
   text-align: center;
 }
@@ -662,4 +666,107 @@ footer p {
   background-image: url(../assets/blog-image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.mainAside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mainAside main {
+  border: 2px solid yellow;
+  width: 70%;
+}
+.mainAside main .blogPost {
+  border-right: 5px solid #50E3C2;
+}
+.mainAside main .blogPost img {
+  -webkit-box-shadow: 20px 20px #50E3C2;
+          box-shadow: 20px 20px #50E3C2;
+  position: relative;
+  top: -150px;
+}
+.mainAside main .blogPost .byline {
+  color: #063974;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.mainAside aside {
+  border: 2px solid magenta;
+  margin-top: 100px;
+  width: calc(35% - 290px);
+  position: absolute;
+  right: 0;
+}
+.mainAside aside img {
+  height: 400px;
+  width: auto;
+}
+.mainAside aside h5 {
+  margin: 20px 0;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  color: #063974;
+}
+.mainAside aside p {
+  margin: 0;
+}
+.mainAside aside p.missionLink {
+  color: #0C5F4C;
+}
+.mainAside aside li::before {
+  content: "• ";
+  color: #50E3C2;
+}
+
+.borderLine {
+  width: 800px;
+  height: 5px;
+  background-color: #50E3C2;
+}
+
+.commentSection {
+  border: 2px solid red;
+  margin: 50px 0;
+}
+.commentSection h4 {
+  color: #2c2c2c;
+  letter-spacing: 1px;
+}
+.commentSection .reyansh,
+.commentSection .olivia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0;
+}
+.commentSection .reyansh .commentImage,
+.commentSection .olivia .commentImage {
+  border: 2px solid orange;
+  width: 15%;
+}
+.commentSection .reyansh .commentText,
+.commentSection .olivia .commentText {
+  border: 2px solid green;
+  width: 82%;
+}
+.commentSection .reyansh .commentText p.date,
+.commentSection .olivia .commentText p.date {
+  font-weight: 700;
+  color: #063974;
+}
+.commentSection .commentForm {
+  background-color: #FAFFFE;
+  height: 55vh;
+}
+.commentSection .commentForm textarea {
+  background-color: #FAFFFE;
 }
