@@ -1,0 +1,76 @@
+// Header
+.contactHeader {
+    height: 60vh;
+    background-image: url(../assets/contact-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    h2 {
+        font-size: 87px;
+        letter-spacing: 9px;
+        color: white;
+        position: relative;
+        top: 150px;
+        left: 70px;
+    }
+}
+
+// Main
+.contactMain {
+    background-color: $iceBlue;
+    .wrapper {
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+form {
+    border: 2px solid magenta;
+    position: relative;
+    top: -150px;
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    box-shadow: 20px 20px $turquoise;
+    .nameEmail {
+        display: flex;
+        justify-content: space-between;
+    }
+    input {
+        border: none;
+        border-bottom: 2px solid $turquoise;
+        width: calc(50% - 15px);
+        padding: 20px;
+    }
+    textarea {
+        border: 2px solid $turquoise;
+        padding: 20px;
+        resize: none;
+    }
+    ::placeholder {
+        font-weight: 300;
+    }
+}
+
+.contactAside {
+    border: 2px solid orange;
+    margin: 100px 0 180px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 50px;
+        i {
+            font-size: 30px;
+            color: $black;
+        }
+    }
+    .email {
+        font-weight: 700;
+    }
+    .phoneAddress p {
+        margin: 0;
+        font-weight: 300;
+    }
+}

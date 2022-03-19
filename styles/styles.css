@@ -260,9 +260,11 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
-section a {
+section a,
+button {
   font-family: "Playfair Display SC", serif;
   color: #FAFFFE;
   background-color: #063974;
@@ -271,6 +273,17 @@ section a {
   line-height: 32px;
   letter-spacing: 1px;
   padding: 11px 15px 15px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  line-height: 58px;
 }
 
 h3 {
@@ -292,7 +305,44 @@ h4 {
   color: #0C5F4C;
 }
 
-p {
+::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  color: #2c2c2c;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+::-moz-placeholder {
+  font-family: "Lato", sans-serif;
+  color: #2c2c2c;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  color: #2c2c2c;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  color: #2c2c2c;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+p,
+::placeholder {
   font-family: "Lato", sans-serif;
   color: #2c2c2c;
   font-size: 20px;
@@ -315,10 +365,7 @@ p {
   left: 0;
 }
 .homeHeader h2 {
-  font-family: "Lato", sans-serif;
   font-size: 62px;
-  font-weight: 700;
-  line-height: 58px;
   letter-spacing: 6.7px;
   text-transform: lowercase;
   color: #0C5F4C;
@@ -359,7 +406,7 @@ nav ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-nav li {
+nav a {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -368,9 +415,8 @@ nav li {
   letter-spacing: 1px;
   color: #FAFFFE;
 }
-nav li:hover, nav li:focus, nav li:active {
+nav a:hover, nav a:focus, nav a:active {
   color: #50E3C2;
-  cursor: pointer;
 }
 
 .heroSection {
@@ -455,4 +501,111 @@ footer p {
   margin: 0;
   color: white;
   text-align: center;
+}
+
+.contactHeader {
+  height: 60vh;
+  background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contactHeader h2 {
+  font-size: 87px;
+  letter-spacing: 9px;
+  color: white;
+  position: relative;
+  top: 150px;
+  left: 70px;
+}
+
+.contactMain {
+  background-color: #FAFFFE;
+}
+.contactMain .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form {
+  border: 2px solid magenta;
+  position: relative;
+  top: -150px;
+  width: 70%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+  -webkit-box-shadow: 20px 20px #50E3C2;
+          box-shadow: 20px 20px #50E3C2;
+}
+form .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form input {
+  border: none;
+  border-bottom: 2px solid #50E3C2;
+  width: calc(50% - 15px);
+  padding: 20px;
+}
+form textarea {
+  border: 2px solid #50E3C2;
+  padding: 20px;
+  resize: none;
+}
+form ::-webkit-input-placeholder {
+  font-weight: 300;
+}
+form ::-moz-placeholder {
+  font-weight: 300;
+}
+form :-ms-input-placeholder {
+  font-weight: 300;
+}
+form ::-ms-input-placeholder {
+  font-weight: 300;
+}
+form ::placeholder {
+  font-weight: 300;
+}
+
+.contactAside {
+  border: 2px solid orange;
+  margin: 100px 0 180px;
+}
+.contactAside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 50px;
+}
+.contactAside ul i {
+  font-size: 30px;
+  color: #2c2c2c;
+}
+.contactAside .email {
+  font-weight: 700;
+}
+.contactAside .phoneAddress p {
+  margin: 0;
+  font-weight: 300;
 }

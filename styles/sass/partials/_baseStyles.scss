@@ -32,9 +32,11 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
-section a {
+section a,
+button {
     font-family: $headingFont;
     color: $iceBlue;
     background-color: $darkBlue;
@@ -43,6 +45,17 @@ section a {
     line-height: 32px;
     letter-spacing: 1px;
     padding: 11px 15px 15px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: $bodyFont;
+    font-weight: 700;
+    line-height: 58px;
 }
 
 h3 {
@@ -64,7 +77,8 @@ h4 {
     color: $green;
 }
 
-p {
+p,
+::placeholder {
     font-family: $bodyFont;
     color: $black;
     font-size: 20px;
