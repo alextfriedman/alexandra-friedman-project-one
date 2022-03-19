@@ -287,6 +287,9 @@ h2 {
   font-size: 87px;
   letter-spacing: 9px;
   color: white;
+  position: relative;
+  top: 150px;
+  left: 70px;
 }
 
 h3 {
@@ -519,6 +522,7 @@ nav a:hover, nav a:focus, nav a:active {
 
 .aboutSection {
   border: 2px solid blue;
+  padding: 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,14 +530,56 @@ nav a:hover, nav a:focus, nav a:active {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.aboutSection .iconsLeft,
+.aboutSection .iconsRight {
+  border: 2px solid red;
+  height: 100%;
+}
+.aboutSection .iconBackground {
+  border: 2px solid yellowgreen;
+  margin: 0 10px 150px 0;
+}
+.aboutSection i {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #50E3C2;
+  border-radius: 50%;
+}
 
 .moreSection {
   background-color: #D2F9F1;
+  padding: 80px 0;
 }
 .moreSection .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.moreSection .wrapper img {
+  position: relative;
+}
+.moreSection .wrapper .locations {
+  border: 2px solid magenta;
+  width: calc(50% - 100px);
+}
+.moreSection .wrapper .locations img {
+  -webkit-box-shadow: 20px 20px #50E3C2;
+          box-shadow: 20px 20px #50E3C2;
+}
+.moreSection .wrapper .plan {
+  border: 2px solid orange;
+  width: calc(50% - 100px);
+}
+.moreSection .wrapper .plan p {
+  margin-bottom: 40px;
+}
+.moreSection .wrapper .plan img {
+  -webkit-box-shadow: -20px 20px #50E3C2;
+          box-shadow: -20px 20px #50E3C2;
+  bottom: -110px;
 }
 .moreSection h3 {
   color: #063974;
@@ -564,11 +610,6 @@ footer p {
   background-image: url(../assets/contact-image-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-.contactHeader h2 {
-  position: relative;
-  top: 150px;
-  left: 70px;
 }
 
 .contactMain {
@@ -614,4 +655,11 @@ footer p {
 .contactAside .phoneAddress p {
   margin: 0;
   font-weight: 300;
+}
+
+.blogHeader {
+  height: 60vh;
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }

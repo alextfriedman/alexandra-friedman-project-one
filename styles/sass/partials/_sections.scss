@@ -35,14 +35,54 @@
 
 .aboutSection {
     border: 2px solid blue;
+    padding: 60px 0;
     display: flex;
     justify-content: space-between;
+    .iconsLeft,
+    .iconsRight {
+        border: 2px solid red;
+        height: 100%;
+    }
+    .iconBackground {
+        border: 2px solid yellowgreen;
+        margin: 0 10px 150px 0;
+    }
+    i {
+        font-size: 30px;
+        // color: white;
+        padding: 10px;
+        background-color: $turquoise;
+        border-radius: 50%;
+    }
 }
 
 .moreSection {
     background-color: $lightBlue;
+    padding: 80px 0;
     .wrapper {
         display: flex;
+        justify-content: space-between;
+        img {
+            position: relative;
+        }
+        .locations {
+            border: 2px solid magenta;
+            width: calc(50% - 100px);
+            img {
+                box-shadow: 20px 20px $turquoise;
+            }
+        }
+        .plan {
+            border: 2px solid orange;
+            width: calc(50% - 100px);
+            p {
+                margin-bottom: 40px;
+            }
+            img {
+                box-shadow: -20px 20px $turquoise;
+                bottom: -110px;
+            }
+        }
     }
     h3 {
         color: $darkBlue;
