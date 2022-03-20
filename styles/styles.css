@@ -542,13 +542,16 @@ nav a:hover, nav a:focus, nav a:active {
 }
 .aboutSection .iconBackground {
   border: 2px solid yellowgreen;
-  margin: 0 10px 150px 0;
+  margin: 0 10px 140px 0;
 }
 .aboutSection i {
   font-size: 30px;
+  color: white;
   padding: 10px;
   background-color: #50E3C2;
   border-radius: 50%;
+  width: 100%;
+  text-align: center;
 }
 
 .moreSection {
@@ -565,6 +568,7 @@ nav a:hover, nav a:focus, nav a:active {
 }
 .moreSection .wrapper img {
   position: relative;
+  width: 118%;
 }
 .moreSection .wrapper .locations {
   border: 2px solid magenta;
@@ -573,6 +577,8 @@ nav a:hover, nav a:focus, nav a:active {
 .moreSection .wrapper .locations img {
   -webkit-box-shadow: 20px 20px #50E3C2;
           box-shadow: 20px 20px #50E3C2;
+  top: -110px;
+  right: 100px;
 }
 .moreSection .wrapper .plan {
   border: 2px solid orange;
