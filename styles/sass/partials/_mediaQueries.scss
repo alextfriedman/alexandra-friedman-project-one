@@ -1,0 +1,31 @@
+/* styles for smaller DESKTOP */
+@media (max-width: 1400px) {
+    /* Blog page */
+    .mainAside {
+        flex-direction: column;
+        main {
+            width: 100%;
+            .blogPost {
+                border-bottom: 5px solid $turquoise;
+                img {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+            .borderLine {
+                display: none;
+            }
+        }
+        aside {
+            position: static;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0;
+            margin-bottom: 100px;
+            .asideText {
+                width: 60%;
+            }
+        }
+    }
+}

@@ -687,7 +687,6 @@ footer p {
   width: 70%;
 }
 .mainAside main .blogPost {
-  border: 2px solid yellow;
   padding-right: 20px;
   border-right: 5px solid #50E3C2;
 }
@@ -703,6 +702,10 @@ footer p {
   color: #063974;
   font-style: italic;
   letter-spacing: 1px;
+}
+.mainAside main .blogPost .blogBottom {
+  margin-bottom: 0;
+  padding-bottom: 50px;
 }
 .mainAside aside {
   border: 2px solid magenta;
@@ -783,4 +786,43 @@ footer p {
 }
 .commentSection .commentForm textarea {
   background-color: #FAFFFE;
+}
+
+/* styles for smaller DESKTOP */
+@media (max-width: 1400px) {
+  /* Blog page */
+  .mainAside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainAside main {
+    width: 100%;
+  }
+  .mainAside main .blogPost {
+    border-bottom: 5px solid #50E3C2;
+  }
+  .mainAside main .blogPost img {
+    width: 100%;
+    left: 0;
+  }
+  .mainAside main .borderLine {
+    display: none;
+  }
+  .mainAside aside {
+    position: static;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+  .mainAside aside .asideText {
+    width: 60%;
+  }
 }
