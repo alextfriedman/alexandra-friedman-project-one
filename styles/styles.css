@@ -573,6 +573,7 @@ nav a:hover, nav a:focus, nav a:active {
 .moreSection .wrapper .locations {
   border: 2px solid magenta;
   width: calc(50% - 100px);
+  text-align: right;
 }
 .moreSection .wrapper .locations img {
   -webkit-box-shadow: 20px 20px #50E3C2;
@@ -683,17 +684,20 @@ footer p {
           justify-content: space-between;
 }
 .mainAside main {
-  border: 2px solid yellow;
   width: 70%;
 }
 .mainAside main .blogPost {
+  border: 2px solid yellow;
+  padding-right: 20px;
   border-right: 5px solid #50E3C2;
 }
 .mainAside main .blogPost img {
+  width: 120%;
   -webkit-box-shadow: 20px 20px #50E3C2;
           box-shadow: 20px 20px #50E3C2;
   position: relative;
   top: -150px;
+  left: -170px;
 }
 .mainAside main .blogPost .byline {
   color: #063974;
@@ -705,7 +709,7 @@ footer p {
   margin-top: 100px;
   width: calc(35% - 290px);
   position: absolute;
-  right: 0;
+  right: 100px;
 }
 .mainAside aside img {
   height: 400px;
@@ -731,9 +735,13 @@ footer p {
 }
 
 .borderLine {
-  width: 800px;
+  width: 1200px;
   height: 5px;
+  display: block;
   background-color: #50E3C2;
+  position: relative;
+  bottom: 5px;
+  right: 320px;
 }
 
 .commentSection {

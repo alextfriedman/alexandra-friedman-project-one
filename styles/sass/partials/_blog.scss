@@ -11,14 +11,17 @@
     display: flex;
     justify-content: space-between;
     main {
-        border: 2px solid yellow;
         width: 70%;
         .blogPost {
+            border: 2px solid yellow;
+            padding-right: 20px;
             border-right: 5px solid $turquoise;
             img {
+                width: 120%;
                 box-shadow: 20px 20px $turquoise;
                 position: relative;
                 top: -150px;
+                left: -170px;
             }
             .byline {
                 color: $darkBlue;
@@ -32,7 +35,7 @@
         margin-top: 100px;
         width: calc(35% - 290px);
         position: absolute;
-        right: 0;
+        right: 100px;
         img {
             height: 400px;
             width: auto;
@@ -59,9 +62,13 @@
 }
 
 .borderLine {
-    width: 800px;
+    width: 1200px;
     height: 5px;
+    display: block;
     background-color: $turquoise;
+    position: relative;
+    bottom: 5px;
+    right: 320px;
 }
 
 .commentSection {
