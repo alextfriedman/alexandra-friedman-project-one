@@ -1064,3 +1064,9 @@ footer p {
     width: 100%;
   }
 }
+@media (max-width: 450px) {
+  /* Home page */
+  .homeHeader h2 span {
+    font-size: 42px;
+  }
+}
