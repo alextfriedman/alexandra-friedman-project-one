@@ -9,6 +9,13 @@ nav {
         text-transform: lowercase;
         font-size: 34.6px;
     }
+    i {
+        color: $iceBlue;
+        font-size: 35px;
+        position: absolute;
+        left: -1000px;
+        opacity: 0;
+    }
     ul {
         width: 40%;
         display: flex;
