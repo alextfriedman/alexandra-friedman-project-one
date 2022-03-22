@@ -26,7 +26,7 @@
                 display: none;
             }
         }
-        aside {
+        .blogAside {
             position: static;
             width: 100%;
             display: flex;
@@ -187,5 +187,69 @@
 }
 
 @media (max-width: 700px) {
-    
+    /* Home page */
+    .homeHeader h2 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        line-height: 40px;
+        span {
+            font-size: 60px;
+        }
+    }
+
+    .heroSection .heroImage {
+        width: 80%;
+    }
+
+    .gallerySection ul {
+        flex-direction: column;
+        padding: 80px 0 30px;
+        li {
+            width: 80%;
+            margin: 0 auto 50px;
+        }
+    }
+
+    .moreSection .wrapper {
+        width: 80%;
+    }
+
+    /* Contact page */
+    .contactHeader h2 {
+        font-size: 50px;
+        letter-spacing: 4px;
+        left: 0;
+    }
+
+    // didn't have time to figure out why this isn't working
+    .contactMain .contactAside p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* Blog page */
+    .blogHeader h2 {
+        font-size: 50px;
+        letter-spacing: 4px;
+        left: 0;
+    }
+
+    .commentSection {
+        .reyansh,
+        .olivia {
+            .commentImage {
+                width: 30%;
+            }
+            .commentText {
+                width: 65%;
+            }
+        }
+    }
+
+    .mainAside .blogAside {
+        flex-direction: column;
+        .asideText {
+            width: 100%;
+        }
+    }
 }

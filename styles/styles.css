@@ -582,6 +582,9 @@ nav a:hover, nav a:focus, nav a:active {
   width: calc(50% - 100px);
   text-align: right;
 }
+.moreSection .wrapper .locations p {
+  margin-bottom: 40px;
+}
 .moreSection .wrapper .locations img {
   -webkit-box-shadow: 20px 20px #50E3C2;
           box-shadow: 20px 20px #50E3C2;
@@ -825,7 +828,7 @@ footer p {
   .mainAside main .borderLine {
     display: none;
   }
-  .mainAside aside {
+  .mainAside .blogAside {
     position: static;
     width: 100%;
     display: -webkit-box;
@@ -837,7 +840,7 @@ footer p {
     margin-top: 0;
     margin-bottom: 100px;
   }
-  .mainAside aside .asideText {
+  .mainAside .blogAside .asideText {
     width: 60%;
     margin-left: 15px;
   }
@@ -990,5 +993,74 @@ footer p {
   }
   .blogAside .asideText {
     width: calc(50% - 15px);
+  }
+}
+@media (max-width: 700px) {
+  /* Home page */
+  .homeHeader h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 40px;
+  }
+  .homeHeader h2 span {
+    font-size: 60px;
+  }
+
+  .heroSection .heroImage {
+    width: 80%;
+  }
+
+  .gallerySection ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 80px 0 30px;
+  }
+  .gallerySection ul li {
+    width: 80%;
+    margin: 0 auto 50px;
+  }
+
+  .moreSection .wrapper {
+    width: 80%;
+  }
+
+  /* Contact page */
+  .contactHeader h2 {
+    font-size: 50px;
+    letter-spacing: 4px;
+    left: 0;
+  }
+
+  .contactMain .contactAside p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /* Blog page */
+  .blogHeader h2 {
+    font-size: 50px;
+    letter-spacing: 4px;
+    left: 0;
+  }
+
+  .commentSection .reyansh .commentImage,
+.commentSection .olivia .commentImage {
+    width: 30%;
+  }
+  .commentSection .reyansh .commentText,
+.commentSection .olivia .commentText {
+    width: 65%;
+  }
+
+  .mainAside .blogAside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainAside .blogAside .asideText {
+    width: 100%;
   }
 }
