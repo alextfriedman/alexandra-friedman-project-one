@@ -547,10 +547,6 @@ nav a:hover, nav a:focus, nav a:active {
   border: 2px solid red;
   height: 100%;
 }
-.aboutSection .aboutLeft,
-.aboutSection .aboutRight {
-  border: 2px solid violet;
-}
 .aboutSection .iconBackground {
   border: 2px solid yellowgreen;
   margin: 0 10px 140px 0;
@@ -843,6 +839,7 @@ footer p {
   }
   .mainAside aside .asideText {
     width: 60%;
+    margin-left: 15px;
   }
 }
 @media (max-width: 1350px) {
@@ -865,6 +862,7 @@ footer p {
   .homeHeader h2 {
     font-size: 50px;
     letter-spacing: 5px;
+    left: 180px;
   }
   .homeHeader h2 span {
     font-size: 90px;
@@ -918,28 +916,79 @@ footer p {
   }
 
   /* Contact page */
-  main .wrapper {
+  .contactMain .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .wrapper .contactForm {
+  .contactMain .wrapper .contactForm {
     width: 100%;
     height: 60vh;
   }
-  main .wrapper .contactAside {
+  .contactMain .wrapper .contactAside {
     margin: 0 auto 80px;
   }
-  main .wrapper .contactAside ul {
+  .contactMain .wrapper .contactAside ul {
     padding: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  main .wrapper .contactAside i,
-main .wrapper .contactAside p {
+  .contactMain .wrapper .contactAside i,
+.contactMain .wrapper .contactAside p {
     font-size: 35px;
     line-height: 50px;
     text-align: center;
+  }
+}
+@media (max-width: 1045px) {
+  .aboutSection .iconBackground {
+    margin-bottom: 200px;
+  }
+}
+@media (max-width: 900px) {
+  /* Home page */
+  .homeHeader img {
+    display: none;
+  }
+  .homeHeader h2 {
+    left: 0;
+  }
+
+  .aboutSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutSection .iconsLeft,
+.aboutSection .iconsRight {
+    display: none;
+  }
+  .aboutSection h4 {
+    border-bottom: 5px solid #50E3C2;
+  }
+
+  /* Forms */
+  form .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+  form input {
+    width: 100%;
+  }
+  form button {
+    margin-top: 40px;
+  }
+
+  /* Blog page */
+  .blogAside img {
+    width: 50%;
+  }
+  .blogAside .asideText {
+    width: calc(50% - 15px);
   }
 }
