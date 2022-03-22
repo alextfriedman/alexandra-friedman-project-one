@@ -2,13 +2,10 @@
     padding: 150px 0 100px;
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
     .heroText {
-        border: 2px solid blue;
         width: 63%;
     }
     .heroImage {
-        border: 2px solid yellowgreen;
         width: 27%;
         img {
             box-shadow: -20px 20px $turquoise;
@@ -22,7 +19,6 @@
 .gallerySection {
     background-color: $lightBlue;
     ul {
-        border: 2px solid red;
         display: flex;
         justify-content: space-between;
         padding: 80px 0;
@@ -33,17 +29,14 @@
 }
 
 .aboutSection {
-    border: 2px solid blue;
     padding: 60px 0;
     display: flex;
     justify-content: space-between;
     .iconsLeft,
     .iconsRight {
-        border: 2px solid red;
         height: 100%;
     }
     .iconBackground {
-        border: 2px solid yellowgreen;
         margin: 0 10px 140px 0;
     }
     i {
@@ -68,7 +61,6 @@
             width: 118%;
         }
         .locations {
-            border: 2px solid magenta;
             width: calc(50% - 100px);
             text-align: right;
             p {
@@ -81,7 +73,6 @@
             }
         }
         .plan {
-            border: 2px solid orange;
             width: calc(50% - 100px);
             p {
                 margin-bottom: 40px;

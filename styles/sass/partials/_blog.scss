@@ -13,7 +13,6 @@
     main {
         width: 70%;
         .blogPost {
-            // border: 2px solid yellow;
             padding-right: 20px;
             border-right: 5px solid $turquoise;
             img {
@@ -35,7 +34,6 @@
         }
     }
     aside {
-        border: 2px solid magenta;
         margin-top: 100px;
         width: calc(35% - 290px);
         position: absolute;
@@ -76,7 +74,6 @@
 }
 
 .commentSection {
-    border: 2px solid red;
     margin: 50px 0;
     h4 {
         color: $black;
@@ -88,11 +85,9 @@
         justify-content: space-between;
         margin: 20px 0;
         .commentImage {
-            border: 2px solid orange;
             width: 15%;
         }
         .commentText {
-            border: 2px solid green;
             width: 82%;
             p.date {
                 font-weight: 700;

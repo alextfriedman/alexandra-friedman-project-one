@@ -365,7 +365,6 @@ aside li {
 }
 
 form {
-  border: 2px solid magenta;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,14 +496,11 @@ nav a:hover, nav a:focus, nav a:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 2px solid red;
 }
 .heroSection .heroText {
-  border: 2px solid blue;
   width: 63%;
 }
 .heroSection .heroImage {
-  border: 2px solid yellowgreen;
   width: 27%;
 }
 .heroSection .heroImage img {
@@ -519,7 +515,6 @@ nav a:hover, nav a:focus, nav a:active {
   background-color: #D2F9F1;
 }
 .gallerySection ul {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,7 +528,6 @@ nav a:hover, nav a:focus, nav a:active {
 }
 
 .aboutSection {
-  border: 2px solid blue;
   padding: 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,11 +538,9 @@ nav a:hover, nav a:focus, nav a:active {
 }
 .aboutSection .iconsLeft,
 .aboutSection .iconsRight {
-  border: 2px solid red;
   height: 100%;
 }
 .aboutSection .iconBackground {
-  border: 2px solid yellowgreen;
   margin: 0 10px 140px 0;
 }
 .aboutSection i {
@@ -578,7 +570,6 @@ nav a:hover, nav a:focus, nav a:active {
   width: 118%;
 }
 .moreSection .wrapper .locations {
-  border: 2px solid magenta;
   width: calc(50% - 100px);
   text-align: right;
 }
@@ -592,7 +583,6 @@ nav a:hover, nav a:focus, nav a:active {
   right: 100px;
 }
 .moreSection .wrapper .plan {
-  border: 2px solid orange;
   width: calc(50% - 100px);
 }
 .moreSection .wrapper .plan p {
@@ -654,7 +644,6 @@ footer p {
 }
 
 .contactAside {
-  border: 2px solid orange;
   margin: 100px 0 180px;
 }
 .contactAside ul {
@@ -718,7 +707,6 @@ footer p {
   padding-bottom: 50px;
 }
 .mainAside aside {
-  border: 2px solid magenta;
   margin-top: 100px;
   width: calc(35% - 290px);
   position: absolute;
@@ -758,7 +746,6 @@ footer p {
 }
 
 .commentSection {
-  border: 2px solid red;
   margin: 50px 0;
 }
 .commentSection h4 {
@@ -777,12 +764,10 @@ footer p {
 }
 .commentSection .reyansh .commentImage,
 .commentSection .olivia .commentImage {
-  border: 2px solid orange;
   width: 15%;
 }
 .commentSection .reyansh .commentText,
 .commentSection .olivia .commentText {
-  border: 2px solid green;
   width: 82%;
 }
 .commentSection .reyansh .commentText p.date,
