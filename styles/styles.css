@@ -770,8 +770,7 @@ footer p {
 .commentSection .olivia .commentText {
   width: 82%;
 }
-.commentSection .reyansh .commentText p.date,
-.commentSection .olivia .commentText p.date {
+.commentSection p.date {
   font-weight: 700;
   color: #063974;
 }

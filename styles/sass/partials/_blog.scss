@@ -89,11 +89,11 @@
         }
         .commentText {
             width: 82%;
-            p.date {
-                font-weight: 700;
-                color: $darkBlue;
-            }
         }
+    }
+    p.date {
+        font-weight: 700;
+        color: $darkBlue;
     }
     .commentForm {
         background-color: $iceBlue;
