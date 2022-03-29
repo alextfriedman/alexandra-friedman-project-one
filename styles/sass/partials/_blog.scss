@@ -91,7 +91,8 @@
             width: 82%;
         }
     }
-    p.date {
+    p.date,
+    #spanDate {
         font-weight: 700;
         color: $darkBlue;
     }
@@ -101,5 +102,8 @@
         textarea {
             background-color: $iceBlue;
         }
+    }
+    .newComment {
+        padding-left: 18%;
     }
 }

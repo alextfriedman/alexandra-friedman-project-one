@@ -355,7 +355,8 @@ h4 {
 
 p,
 ::placeholder,
-aside li {
+aside li,
+#spanDate {
   font-family: "Lato", sans-serif;
   color: #2c2c2c;
   font-size: 20px;
@@ -770,7 +771,8 @@ footer p {
 .commentSection .olivia .commentText {
   width: 82%;
 }
-.commentSection p.date {
+.commentSection p.date,
+.commentSection #spanDate {
   font-weight: 700;
   color: #063974;
 }
@@ -780,6 +782,9 @@ footer p {
 }
 .commentSection .commentForm textarea {
   background-color: #FAFFFE;
+}
+.commentSection .newComment {
+  padding-left: 18%;
 }
 
 @media (max-width: 1450px) {

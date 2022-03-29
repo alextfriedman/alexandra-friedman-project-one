@@ -2,7 +2,7 @@
 
 // Get information from the user in the form element
     // query selector to store form element
-    // store user info in a variable
+    // store user info in variables
     // all of this will go in an event listener on button submit
 // Append the information to the page
     // query selector for the dynamic content
@@ -30,16 +30,26 @@ formElement.addEventListener("submit", function(event){
         dateName.textContent = name;
         // append name to the div on the page
         document.querySelector("div.newComment").appendChild(dateName);
+        
         // create a p element
         const paragraph = document.createElement("p");
         // update the p textContent to be the user's comment
         paragraph.textContent = comment;
         // append comment to the div on the page
         document.querySelector("div.newComment").appendChild(paragraph);
-        // clear the form by making it an empty string
+        
+        // Code to make the date appear taken (& modified) from NakedBrunch on Stack Overflow: https://stackoverflow.com/questions/4904667/html-how-do-i-insert-dynamic-date-in-webpage
+        let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+            'August', 'September', 'October', 'November', 'December'];
+        let today = new Date();
+        today.setTime(today.getTime() + (1000 * 3600));
+        document.getElementById("spanDate").innerHTML = months[today.getMonth()] + " " + today.getDate() + ", " + today.getFullYear() + " by ";
+        
+        // clear the form inputs
         nameInput.value = "";
         emailInput.value = "";
         commentInput.value = "";
     };
+    
 });
 
